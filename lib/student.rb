@@ -51,8 +51,9 @@ class Student
     obj
   end
   def find_by_name(name)
-    sql = <<-SQL 
+    sql = <<-SQL
       SELECT * FROM students WHERE name = ?
     SQL
-    DB[:conn].execute(sql,name) 
+    DB[:conn].execute(sql,name)
+  end
 end
