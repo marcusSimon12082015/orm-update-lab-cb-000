@@ -9,3 +9,23 @@ Student
     drops the students table from the database
   #save
     saves an instance of the Student class to the database and then sets the given students `id` attribute
+    updates a record if called on an object that is already persisted (FAILED - 1)
+
+Failures:
+
+  1) Student #save updates a record if called on an object that is already persisted
+     Failure/Error: expect(jane_from_db[0][1]).to eq("Jane Smith")
+
+       expected: "Jane Smith"
+            got: "Jane"
+
+       (compared using ==)
+     # ./spec/student_spec.rb:66:in `block (3 levels) in <top (required)>'
+
+Finished in 0.07791 seconds (files took 0.18844 seconds to load)
+6 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/student_spec.rb:59 # Student #save updates a record if called on an object that is already persisted
+
