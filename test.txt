@@ -9,25 +9,3 @@ Student
     drops the students table from the database
   #save
     saves an instance of the Student class to the database and then sets the given students `id` attribute
-    updates a record if called on an object that is already persisted
-  .create
-    creates a student object with name and grade attributes (FAILED - 1)
-
-Failures:
-
-  1) Student .create creates a student object with name and grade attributes
-     Failure/Error: expect(DB[:conn].execute("SELECT * FROM students")).to eq([[1, "Sally", "10th"]])
-
-       expected: [[1, "Sally", "10th"]]
-            got: []
-
-       (compared using ==)
-     # ./spec/student_spec.rb:73:in `block (3 levels) in <top (required)>'
-
-Finished in 0.07913 seconds (files took 0.18327 seconds to load)
-7 examples, 1 failure
-
-Failed examples:
-
-rspec ./spec/student_spec.rb:71 # Student .create creates a student object with name and grade attributes
-
