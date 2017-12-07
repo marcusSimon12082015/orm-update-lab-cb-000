@@ -1,0 +1,7 @@
+
+Student
+  attributes
+    has a name and a grade
+    has an id that defaults to `nil` on initialization
+  .create_table
+    creates the students table in the database (FAILED - 1)
