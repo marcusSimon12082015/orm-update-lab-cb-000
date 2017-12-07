@@ -41,5 +41,5 @@ class Student
   def self.create(name,grade)
     obj = Student.new(name,grade)
     obj
-  end 
+  end
 end
