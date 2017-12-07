@@ -40,6 +40,7 @@ class Student
   end
   def self.create(name,grade)
     obj = Student.new(name,grade)
+    obj.save
     obj
   end
 end
