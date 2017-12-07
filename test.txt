@@ -5,3 +5,20 @@ Student
     has an id that defaults to `nil` on initialization
   .create_table
     creates the students table in the database (FAILED - 1)
+
+Failures:
+
+  1) Student .create_table creates the students table in the database
+     Failure/Error: Student.create_table
+
+     NoMethodError:
+       undefined method `create_table' for Student:Class
+     # ./spec/student_spec.rb:37:in `block (3 levels) in <top (required)>'
+
+Finished in 0.0167 seconds (files took 0.18061 seconds to load)
+3 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/student_spec.rb:35 # Student .create_table creates the students table in the database
+
