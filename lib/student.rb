@@ -49,5 +49,5 @@ class Student
     obj.name = row[1]
     obj.grade = row[2]
     obj
-  end 
+  end
 end
