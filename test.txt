@@ -11,25 +11,3 @@ Student
     saves an instance of the Student class to the database and then sets the given students `id` attribute
     updates a record if called on an object that is already persisted
   .create
-    creates a student object with name and grade attributes
-  .new_from_db
-    creates an instance with corresponding attribute values
-  .find_by_name
-    returns an instance of student that matches the name from the DB (FAILED - 1)
-
-Failures:
-
-  1) Student .find_by_name returns an instance of student that matches the name from the DB
-     Failure/Error: expect(josh_from_db.name).to eq("Josh")
-
-     NoMethodError:
-       undefined method `name' for [[1, "Josh", "9th"]]:Array
-     # ./spec/student_spec.rb:93:in `block (3 levels) in <top (required)>'
-
-Finished in 0.05345 seconds (files took 0.14989 seconds to load)
-9 examples, 1 failure
-
-Failed examples:
-
-rspec ./spec/student_spec.rb:89 # Student .find_by_name returns an instance of student that matches the name from the DB
-
