@@ -13,23 +13,3 @@ Student
   .create
     creates a student object with name and grade attributes
   .new_from_db
-    creates an instance with corresponding attribute values
-  .find_by_name
-    returns an instance of student that matches the name from the DB (FAILED - 1)
-
-Failures:
-
-  1) Student .find_by_name returns an instance of student that matches the name from the DB
-     Failure/Error: josh_from_db = Student.find_by_name("Josh")
-
-     NoMethodError:
-       undefined method `find_by_name' for Student:Class
-     # ./spec/student_spec.rb:92:in `block (3 levels) in <top (required)>'
-
-Finished in 0.07521 seconds (files took 0.17168 seconds to load)
-9 examples, 1 failure
-
-Failed examples:
-
-rspec ./spec/student_spec.rb:89 # Student .find_by_name returns an instance of student that matches the name from the DB
-
