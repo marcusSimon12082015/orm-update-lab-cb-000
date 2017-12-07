@@ -9,3 +9,25 @@ Student
     drops the students table from the database
   #save
     saves an instance of the Student class to the database and then sets the given students `id` attribute
+    updates a record if called on an object that is already persisted
+  .create
+    creates a student object with name and grade attributes
+  .new_from_db
+    creates an instance with corresponding attribute values (FAILED - 1)
+
+Failures:
+
+  1) Student .new_from_db creates an instance with corresponding attribute values
+     Failure/Error: pat = Student.new_from_db(row)
+
+     NoMethodError:
+       undefined method `new_from_db' for Student:Class
+     # ./spec/student_spec.rb:80:in `block (3 levels) in <top (required)>'
+
+Finished in 0.07552 seconds (files took 0.16881 seconds to load)
+8 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/student_spec.rb:78 # Student .new_from_db creates an instance with corresponding attribute values
+
